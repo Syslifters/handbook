@@ -1,0 +1,4 @@
+Contact: https://handbook.syslifters.com/vulnerability-disclosure
+Expires: 2027-05-30T22:00:00.000Z
+Encryption: https://handbook.syslifters.com/assets/team.cer
+Preferred-Languages: en, de

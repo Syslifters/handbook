@@ -1,0 +1,231 @@
+# Hi! We are the Syslifters.
+
+> Syslifters is a penetration testing company focused on Active Directory/Entra ID and web applications.
+
+## Table of Contents
+
+- [👩‍💻 Secure Coding Policy](/organization/secure-coding.md): Secure coding requirements and OWASP checklist alignment for Syslifters projects.
+- [📝 Information Security and Privacy Policy](/organization/information-security-policy.md): Policy defining how Syslifters protects information security and personal data.
+- [🔥 Privacy Incident and Breach Management Process](/organization/incident-response.md): Process for identifying, containing, and reporting privacy incidents and data breaches.
+- [About our organization](/organization.md): Overview of Syslifters’ organization, structure, and internal policies.
+- [About the handbook](/about-the-handbook.md): What this handbook is, who it’s for, and how to contribute.
+- [AD enumeration](/pentesting-manual/active-directory/enumeration/ad-enumeration.md): Tools and techniques for enumerating Active Directory and Entra ID environments.
+- [ADCS](/pentesting-manual/active-directory/lateral-movement/adcs.md): Active Directory Certificate Services (AD CS) notes and references for common abuse paths.
+- [Advisories](/advisories.md): Security advisories and disclosure reports published by Syslifters
+- [After our pentests](/after-pentests.md): What happens after a pentest - report delivery, retesting, and access deprovisioning guidance.
+- [Android emulation](/pentesting-manual/mobile/android-emulation.md): Set up Android Studio emulators for mobile testing, including proxying and CA certificates.
+- [API endpoints wordlists](/pentesting-manual/web-applications/wordlists/api-endpoints.md): Links and quick workflow for API route discovery wordlists/tools.
+- [Aron Molnar](/about-us/aron.md): Profile page and CV for Aron Molnar with contact details, experience, and certifications.
+- [ASP.NET endpoint checklist](/pentesting-manual/web-applications/dotnet-endpoints.md): Common ASP.NET MVC / Identity endpoints and files to probe during testing.
+- [ASP.NET ViewState](/pentesting-manual/web-applications/viewstate.md): ViewState deserialization background and tooling references.
+- [Azure Arc abuse](/pentesting-manual/entraid-azure/azure-arc-abuse.md): Reference link for Azure Arc abuse techniques and an example attack chain.
+- [Before our pentests](/before-pentests.md): What to expect before a pentest - scoping, timeboxing, permission to attack, lead times, and preparation steps.
+- [Canvas apps vs model-driven apps](/pentesting-manual/power-platform/difference-between-canvas-apps-and-model-driven-apps.md): Key differences between Power Apps canvas apps and model-driven apps, and when to use each.
+- [Cheat sheets](/pentesting-manual/web-applications/cheat-sheets.md): Curated external cheat sheets referenced in our web application testing notes.
+- [Checklist](/pentesting-manual/entraid-azure/checklist.md): Practical checklist for Entra ID and Azure assessments, including CA policy review, tooling, and common risk areas.
+- [Christoph Mahrl](/about-us/christoph.md): Profile page for Christoph Mahrl with contact details, experience, and certifications.
+- [Common security issues in financial web apps](/pentesting-manual/web-applications/common-security-issues-financial-apps.md): Reference material for checkout/payment and financially oriented web application issues.
+- [Conditional access bypasses](/pentesting-manual/entraid-azure/conditional-access-bypasses.md): Reference link collection for conditional access bypass techniques and discussion.
+- [Contact us](/contact-us.md): Contact options for Syslifters (email with S/MIME, Signal, phone, LinkedIn, GitHub).
+- [Corporate identity](/organization/corporate-identity.md): Brand assets and guidelines for Syslifters/SysReptor/SysLeaks - logos, colors, badges, and fonts.
+- [Create security roles and set permissions](/pentesting-manual/power-platform/create-security-roles-and-set-permissions.md): Microsoft Learn references for Dataverse security roles, privileges, and user security configuration.
+- [Credential dumping](/pentesting-manual/active-directory/credential-access/credential-dumping.md): Notes and commands for credential dumping in AD environments (e.g., Mimikatz, SCCM).
+- [CRLF injection to add email CC](/pentesting-manual/web-applications/auth/crlf-email-cc.md): Steal password reset links by injecting new headers (CC) via newline injection.
+- [Default permissions and access](/pentesting-manual/power-platform/default-permissions-and-access.md): How default environment permissions and Dataverse security roles typically work, plus governance pitfalls and recommendations.
+- [Defense evasion](/pentesting-manual/active-directory/defense-evasion.md): Techniques for bypassing or disabling common host protections during AD assessments.
+- [Delegations overview](/pentesting-manual/active-directory/lateral-movement/kerberos-delegation/delegations-overview.md): Overview page for Kerberos delegation topics.
+- [DNS manipulation](/pentesting-manual/active-directory/lateral-movement/dns-manipulation.md): Notes and tooling references for DNS manipulation and related coercion setups.
+- [Downloading m3u8 playlists](/pentesting-manual/web-applications/m3u8-playlist-download.md): Practical ways to download HLS streams using browser extensions, yt-dlp, or ffmpeg.
+- [During our pentests](/during-pentests.md): How we work during a pentest, including communication, confidentiality, source IP, and retest policy.
+- [Email setup](/organization/human-resources/email-setup.md): Configure email encryption (S/MIME) and legally required signatures/footers for eM Client, Nextcloud Mail, and Thunderbird.
+- [Environment variables stored as plain text](/pentesting-manual/power-platform/environment-variables-stored-as-plain-text.md): Avoid storing secrets in text environment variables; use secret variables backed by Azure Key Vault.
+- [Executive summaries](/pentesting-manual/reporting/executive-summaries.md): Coming soon.
+- [Fileshare enumeration](/pentesting-manual/active-directory/enumeration/fileshare-enumeration.md): Techniques and tools for discovering and analyzing SMB file shares in AD environments.
+- [Finding descriptions](/pentesting-manual/reporting/findings/descriptions.md): Coming soon.
+- [Finding recommendations](/pentesting-manual/reporting/findings/recommendations.md): Coming soon.
+- [Finding summaries](/pentesting-manual/reporting/findings/summaries.md): Coming soon.
+- [Finding titles](/pentesting-manual/reporting/findings/titles.md): How to write concise, concrete pentest finding titles that communicate impact and root cause.
+- [Flutter app setup (proxy & TLS)](/pentesting-manual/mobile/flutter-app-setup.md): Practical steps to work around Flutter apps ignoring proxy settings and system trust stores.
+- [Framework-specific wordlists](/pentesting-manual/web-applications/wordlists/framework-specific.md): Starting points for framework and service endpoint discovery.
+- [Hallo! Wir sind die Syslifters.](/de.md): Syslifters ist ein Pentesting-Unternehmen mit Fokus auf Active Directory/Entra ID und Webanwendungen, inkl. Referenzen, Stärken und Kontakt.
+- [Hash cracking](/pentesting-manual/active-directory/credential-access/hash-cracking.md): Hash cracking workflows and references for AD passwords and Kerberos material.
+- [Hijack RDP session](/pentesting-manual/active-directory/credential-access/hijack-rdp-session.md): Techniques for taking over existing RDP sessions for lateral movement or privilege escalation.
+- [Host enumeration](/pentesting-manual/active-directory/enumeration/host-enumeration.md): Tools and checklists for enumerating Windows hosts during Active Directory assessments.
+- [HTTP / RPC relaying](/pentesting-manual/active-directory/lateral-movement/http-rpc-relaying.md): ntlmrelayx workflows for relaying to AD CS via HTTP and RPC interfaces.
+- [HTTPS traffic decryption with Wireshark](/pentesting-manual/fat-clients/https-traffic-decryption-with-wireshark.md): Decrypt TLS traffic by logging ephemeral session keys with SSLKEYLOGFILE and loading them into Wireshark.
+- [Human Resources](/organization/human-resources.md): Coming soon.
+- [Internal Tools of a Pentesting company](/pentesting-manual/internal-toolset.md): Internal tools and providers we use to run the company, with a note about migrating toward European/open-source solutions.
+- [IPv6 MitM](/pentesting-manual/active-directory/lateral-movement/ipv6-mitm.md): IPv6 man-in-the-middle starting points and tooling references.
+- [Java RMI](/pentesting-manual/fat-clients/java-rmi.md): Quick primer on Java RMI, what to look for during testing, and tools/approaches for exploration.
+- [JWT attacks](/pentesting-manual/web-applications/jwt-attacks.md): Quick usage snippet for jwt_tool playbook scanning.
+- [Katana recon pipeline](/pentesting-manual/web-applications/recon/katana-pipeline.md): Crawl + archive URL collection, JS discovery, and secret scanning workflow.
+- [LDAP relaying](/pentesting-manual/active-directory/lateral-movement/ldap-relaying.md): Techniques for relaying NTLM authentication to LDAP, including WebClient coercion workflows.
+- [Learn and practice](/pentesting-manual/web-applications/learn-and-practice.md): Curated resources for web application hacking practice and staying up to date.
+- [Leonard Rosian](/about-us/leonard.md): Profile page and CV for Leonard Rosian with contact details, experience, and training/certifications.
+- [License to role mapping risks](/pentesting-manual/power-platform/license-to-role-mapping-risks.md): How license assignment and app sharing can implicitly grant Dataverse roles and lead to unintended data access.
+- [Limit environment creation for users](/pentesting-manual/power-platform/limit-environment-creation-for-users.md): Reference for controlling who can create Power Platform environments in a tenant.
+- [Limited audit trail due to missing logging configuration](/pentesting-manual/power-platform/limited-audit-trail-missing-logging-configuration.md): Enable Dataverse auditing and review retention settings to avoid gaps in audit trails.
+- [LPE](/pentesting-manual/active-directory/privilege-escalation/lpe.md): Local privilege escalation notes and tooling references for Windows hosts in AD environments.
+- [Making changes](/making-changes.md): Guidelines for contributing changes to the handbook, including sensitivity and review expectations.
+- [Mass assignment in password resets](/pentesting-manual/web-applications/auth/mass-assignment-password-resets.md): Try adding extra parameters to change another user's password.
+- [Matthäus Förster](/about-us/matthaeus.md): Profile page and CV for Matthäus Förster with contact details, experience, and certifications.
+- [Michael Wedl](/about-us/michael.md): Profile page and CV for Michael Wedl with contact details, experience, and certifications.
+- [Missing data policy (Data Loss Prevention)](/pentesting-manual/power-platform/missing-data-loss-prevention-policy.md): Missing DLP policies can enable unwanted connectors and data exfiltration from Power Platform environments.
+- [Network enumeration](/pentesting-manual/active-directory/enumeration/network-enumeration.md): Network discovery and service enumeration starting points for AD environments.
+- [Normalization and Unicode attacks (password resets)](/pentesting-manual/web-applications/auth/normalization-unicode-attacks.md): Use Unicode/punycode edge cases to redirect reset links or bypass validation.
+- [Not found](/404.md): Page not found.
+- [NTLM channel binding for web apps](/pentesting-manual/web-applications/ntlm-channel-binding.md): Notes on testing "Extended Protection for Authentication" (EPA) / channel binding for NTLM over HTTPS.
+- [OIDC (quick note)](/pentesting-manual/web-applications/oidc.md): Flow choices and PKCE reminder.
+- [Overview of Microsoft Power Platform](/pentesting-manual/power-platform/overview-of-microsoft-power-platform.md): A quick overview of the Power Platform components and how they relate (Power BI, Power Apps, Power Automate, Power Virtual Agents, Dataverse, connectors).
+- [Overview of our pentesting procedure](/pentesting-procedure.md): Our pentesting approach from kickoff and execution to reporting, remediation, and a free retest within eight weeks.
+- [Parameter pollution (password resets)](/pentesting-manual/web-applications/auth/parameter-pollution.md): Account takeover patterns when duplicate parameters are interpreted in surprising ways.
+- [Password spraying](/pentesting-manual/active-directory/credential-access/password-spraying.md): Password spraying starting points for AD environments.
+- [Patrick Pirker](/about-us/patrick.md): Profile page and CV for Patrick Pirker with contact details, experience, and certifications.
+- [Pentest operation rules](/pentesting-manual/operation-rules.md): A practical checklist for prep, collaboration, evidence hygiene, and secure handling of customer data during pentests.
+- [Pentest planning process](/pentesting-manual/pentest-planning-process.md): This document describes the Syslifters pentest planning process and the kanban-style Pentest Planning Board we use to run it.
+- [Pentesting in Aachen: a list of pentesting providers](/p/pentesting-in-aachen.md)
+- [Pentesting in Aarau: a list of pentesting providers](/p/pentesting-in-aarau.md)
+- [Pentesting in Aargau: a list of pentesting providers](/p/pentesting-in-aargau.md)
+- [Pentesting in Amstetten: a list of pentesting providers](/p/pentesting-in-amstetten.md)
+- [Pentesting in Austria: a list of pentesting providers](/p/pentesting-in-austria.md)
+- [Pentesting in Baar: a list of pentesting providers](/p/pentesting-in-baar.md)
+- [Pentesting in Baden-Württemberg: a list of pentesting providers](/p/pentesting-in-baden-wuerttemberg.md)
+- [Pentesting in Bamberg: a list of pentesting providers](/p/pentesting-in-bamberg.md)
+- [Pentesting in Basel-Landschaft: a list of pentesting providers](/p/pentesting-in-basel-landschaft.md)
+- [Pentesting in Bavaria: a list of pentesting providers](/p/pentesting-in-bavaria.md)
+- [Pentesting in Bensheim: a list of pentesting providers](/p/pentesting-in-bensheim.md)
+- [Pentesting in Berlin: a list of pentesting providers](/p/pentesting-in-berlin.md)
+- [Pentesting in Bern: a list of pentesting providers](/p/pentesting-in-bern.md)
+- [Pentesting in Bochum: a list of pentesting providers](/p/pentesting-in-bochum.md)
+- [Pentesting in Bonn: a list of pentesting providers](/p/pentesting-in-bonn.md)
+- [Pentesting in Brandenburg: a list of pentesting providers](/p/pentesting-in-brandenburg.md)
+- [Pentesting in Bremen: a list of pentesting providers](/p/pentesting-in-bremen.md)
+- [Pentesting in Brunn am Gebirge: a list of pentesting providers](/p/pentesting-in-brunn-am-gebirge.md)
+- [Pentesting in Buchs: a list of pentesting providers](/p/pentesting-in-buchs.md)
+- [Pentesting in Chemnitz: a list of pentesting providers](/p/pentesting-in-chemnitz.md)
+- [Pentesting in Cologne: a list of pentesting providers](/p/pentesting-in-cologne.md)
+- [Pentesting in Darmstadt: a list of pentesting providers](/p/pentesting-in-darmstadt.md)
+- [Pentesting in Dintikon: a list of pentesting providers](/p/pentesting-in-dintikon.md)
+- [Pentesting in Dortmund: a list of pentesting providers](/p/pentesting-in-dortmund.md)
+- [Pentesting in Eschborn: a list of pentesting providers](/p/pentesting-in-eschborn.md)
+- [Pentesting in Essen: a list of pentesting providers](/p/pentesting-in-essen.md)
+- [Pentesting in Flensburg: a list of pentesting providers](/p/pentesting-in-flensburg.md)
+- [Pentesting in Frankfurt am Main: a list of pentesting providers](/p/pentesting-in-frankfurt-am-main.md)
+- [Pentesting in Frankfurt on the Main: a list of pentesting providers](/p/pentesting-in-frankfurt-on-the-main.md)
+- [Pentesting in Frauenfeld: a list of pentesting providers](/p/pentesting-in-frauenfeld.md)
+- [Pentesting in Gallen: a list of pentesting providers](/p/pentesting-in-gallen.md)
+- [Pentesting in Gäufelden: a list of pentesting providers](/p/pentesting-in-gaeufelden.md)
+- [Pentesting in Geisenheim: a list of pentesting providers](/p/pentesting-in-geisenheim.md)
+- [Pentesting in Geldern: a list of pentesting providers](/p/pentesting-in-geldern.md)
+- [Pentesting in Gelsenkirchen: a list of pentesting providers](/p/pentesting-in-gelsenkirchen.md)
+- [Pentesting in Gerlafingen: a list of pentesting providers](/p/pentesting-in-gerlafingen.md)
+- [Pentesting in Germany: a list of pentesting providers](/p/pentesting-in-germany.md)
+- [Pentesting in Glattbrugg: a list of pentesting providers](/p/pentesting-in-glattbrugg.md)
+- [Pentesting in Göllersdorf: a list of pentesting providers](/p/pentesting-in-goellersdorf.md)
+- [Pentesting in Graz: a list of pentesting providers](/p/pentesting-in-graz.md)
+- [Pentesting in Grenchen: a list of pentesting providers](/p/pentesting-in-grenchen.md)
+- [Pentesting in Hagenberg: a list of pentesting providers](/p/pentesting-in-hagenberg.md)
+- [Pentesting in Hallwil: a list of pentesting providers](/p/pentesting-in-hallwil.md)
+- [Pentesting in Hamburg: a list of pentesting providers](/p/pentesting-in-hamburg.md)
+- [Pentesting in Heilbronn: a list of pentesting providers](/p/pentesting-in-heilbronn.md)
+- [Pentesting in Hesse: a list of pentesting providers](/p/pentesting-in-hesse.md)
+- [Pentesting in Hof: a list of pentesting providers](/p/pentesting-in-hof.md)
+- [Pentesting in Hollabrunn: a list of pentesting providers](/p/pentesting-in-hollabrunn.md)
+- [Pentesting in Ilmmünster: a list of pentesting providers](/p/pentesting-in-ilmmuenster.md)
+- [Pentesting in Innsbruck: a list of pentesting providers](/p/pentesting-in-innsbruck.md)
+- [Pentesting in Karlsruhe: a list of pentesting providers](/p/pentesting-in-karlsruhe.md)
+- [Pentesting in Köln: a list of pentesting providers](/p/pentesting-in-koeln.md)
+- [Pentesting in Korneuburg: a list of pentesting providers](/p/pentesting-in-korneuburg.md)
+- [Pentesting in Krems an der Donau: a list of pentesting providers](/p/pentesting-in-krems-an-der-donau.md)
+- [Pentesting in Krummnußbaum: a list of pentesting providers](/p/pentesting-in-krummnussbaum.md)
+- [Pentesting in Leipzig: a list of pentesting providers](/p/pentesting-in-leipzig.md)
+- [Pentesting in Lower Austria: a list of pentesting providers](/p/pentesting-in-lower-austria.md)
+- [Pentesting in Lünen: a list of pentesting providers](/p/pentesting-in-luenen.md)
+- [Pentesting in Luzern: a list of pentesting providers](/p/pentesting-in-luzern.md)
+- [Pentesting in Mecklenburg-Vorpommern: a list of pentesting providers](/p/pentesting-in-mecklenburg-vorpommern.md)
+- [Pentesting in Melk: a list of pentesting providers](/p/pentesting-in-melk.md)
+- [Pentesting in Möhrendorf: a list of pentesting providers](/p/pentesting-in-moehrendorf.md)
+- [Pentesting in Münchenstein: a list of pentesting providers](/p/pentesting-in-muenchenstein.md)
+- [Pentesting in Munich: a list of pentesting providers](/p/pentesting-in-munich.md)
+- [Pentesting in Neu-Isenburg: a list of pentesting providers](/p/pentesting-in-neu-isenburg.md)
+- [Pentesting in Neu-Ulm: a list of pentesting providers](/p/pentesting-in-neu-ulm.md)
+- [Pentesting in Neumarkt in der Oberpfalz: a list of pentesting providers](/p/pentesting-in-neumarkt-in-der-oberpfalz.md)
+- [Pentesting in Neustadt an der Weinstraße: a list of pentesting providers](/p/pentesting-in-neustadt-an-der-weinstrasse.md)
+- [Pentesting in Neverin: a list of pentesting providers](/p/pentesting-in-neverin.md)
+- [Pentesting in North Rhine-Westphalia: a list of pentesting providers](/p/pentesting-in-north-rhine-westphalia.md)
+- [Pentesting in Paderborn: a list of pentesting providers](/p/pentesting-in-paderborn.md)
+- [Pentesting in Peygarten-Ottenstein: a list of pentesting providers](/p/pentesting-in-peygarten-ottenstein.md)
+- [Pentesting in Polch: a list of pentesting providers](/p/pentesting-in-polch.md)
+- [Pentesting in Premstätten: a list of pentesting providers](/p/pentesting-in-premstaetten.md)
+- [Pentesting in Puch bei Hallein: a list of pentesting providers](/p/pentesting-in-puch-bei-hallein.md)
+- [Pentesting in Rapperswil: a list of pentesting providers](/p/pentesting-in-rapperswil.md)
+- [Pentesting in Regensburg: a list of pentesting providers](/p/pentesting-in-regensburg.md)
+- [Pentesting in Rhineland-Palatinate: a list of pentesting providers](/p/pentesting-in-rhineland-palatinate.md)
+- [Pentesting in Salzburg: a list of pentesting providers](/p/pentesting-in-salzburg.md)
+- [Pentesting in Saxony: a list of pentesting providers](/p/pentesting-in-saxony.md)
+- [Pentesting in Schärding: a list of pentesting providers](/p/pentesting-in-schaerding.md)
+- [Pentesting in Schleswig-Holstein: a list of pentesting providers](/p/pentesting-in-schleswig-holstein.md)
+- [Pentesting in Schwechat: a list of pentesting providers](/p/pentesting-in-schwechat.md)
+- [Pentesting in Schweinern: a list of pentesting providers](/p/pentesting-in-schweinern.md)
+- [Pentesting in Seeon: a list of pentesting providers](/p/pentesting-in-seeon.md)
+- [Pentesting in Solothurn: a list of pentesting providers](/p/pentesting-in-solothurn.md)
+- [Pentesting in St. Gallen: a list of pentesting providers](/p/pentesting-in-st-gallen.md)
+- [Pentesting in St. Marienkirchen: a list of pentesting providers](/p/pentesting-in-st-marienkirchen.md)
+- [Pentesting in St. Pölten: a list of pentesting providers](/p/pentesting-in-st-poelten.md)
+- [Pentesting in Stockerau: a list of pentesting providers](/p/pentesting-in-stockerau.md)
+- [Pentesting in Stuttgart: a list of pentesting providers](/p/pentesting-in-stuttgart.md)
+- [Pentesting in Styria: a list of pentesting providers](/p/pentesting-in-styria.md)
+- [Pentesting in Switzerland: a list of pentesting providers](/p/pentesting-in-switzerland.md)
+- [Pentesting in Thurgau: a list of pentesting providers](/p/pentesting-in-thurgau.md)
+- [Pentesting in Tübingen: a list of pentesting providers](/p/pentesting-in-tuebingen.md)
+- [Pentesting in Tyrol: a list of pentesting providers](/p/pentesting-in-tyrol.md)
+- [Pentesting in Ulm: a list of pentesting providers](/p/pentesting-in-ulm.md)
+- [Pentesting in Upper Austria: a list of pentesting providers](/p/pentesting-in-upper-austria.md)
+- [Pentesting in Vienna: a list of pentesting providers](/p/pentesting-in-vienna.md)
+- [Pentesting in Weimar: a list of pentesting providers](/p/pentesting-in-weimar.md)
+- [Pentesting in Wettingen: a list of pentesting providers](/p/pentesting-in-wettingen.md)
+- [Pentesting in Wiesbaden: a list of pentesting providers](/p/pentesting-in-wiesbaden.md)
+- [Pentesting in Wiesendangen: a list of pentesting providers](/p/pentesting-in-wiesendangen.md)
+- [Pentesting in Wundschuh: a list of pentesting providers](/p/pentesting-in-wundschuh.md)
+- [Pentesting in Wuppertal: a list of pentesting providers](/p/pentesting-in-wuppertal.md)
+- [Pentesting in Zurich: a list of pentesting providers](/p/pentesting-in-zurich.md)
+- [Pentesting Manual](/pentesting-manual.md): Overview and entry point to our pentesting notes, playbooks, and reporting guidance.
+- [Pentesting Sample Reports](/pentesting-sample-reports.md): Downloadable pentest sample reports (AD, web, external) showcasing our reporting style.
+- [Physical security](/pentesting-manual/physical-security.md): A collection of ideas for assessing physical security around offices, devices, documents, and access control.
+- [Power Platform dataverse](/pentesting-manual/power-platform/power-platform-dataverse.md): What Dataverse is, when to use it, and a practical overview of the Dataverse security model and common pitfalls.
+- [Power Platform environments](/pentesting-manual/power-platform/power-platform-environments.md): What environments are, how they relate to Dataverse, and common environment types and governance notes.
+- [Pricing](/pricing.md): Pricing model for pentests, including day rates, typical project ranges, and discount rules.
+- [Privacy Policy](/privacy.md): Privacy policy for handbook.syslifters.com.
+- [Pro Bono Pentests](/pro-bono-pentests.md): Pro bono pentest program - eligibility, expectations, retesting requirements, and how to apply.
+- [PXE boot](/pentesting-manual/active-directory/credential-access/pxe-boot.md): PXE boot attack chain notes for extracting SCCM secrets and certificates.
+- [Read access to tables with compiled assemblies](/pentesting-manual/power-platform/read-access-to-tables-with-compiled-assemblies.md): How overly broad table permissions can allow users to list and download compiled Dataverse/D365 plugin assemblies.
+- [Remote debugging on mobile](/pentesting-manual/mobile/remote-debugging.md): Use Chrome remote debugging when TLS interception breaks on-device traffic inspection.
+- [Report writing](/pentesting-manual/reporting/report-writing.md): Style and clarity guidelines for pentest reports (voice, tense, recommendations, and redaction).
+- [RoadTools](/pentesting-manual/entraid-azure/roadtools.md): Notes for using ROADtools and ROADrecon in Entra ID assessments, including token acquisition, PRT auth, and CA policy export.
+- [Samuel Haim](/about-us/samuel.md): Profile page and CV for Samuel Haim with contact details, experience, and certifications.
+- [Screenshots](/pentesting-manual/reporting/screenshots.md): How to take clear, useful, and properly redacted screenshots for pentest reports.
+- [Search Shodan for SSH keys](/pentesting-manual/external/search-shodan-for-ssh-keys.md): Get an SSH host key fingerprint and use it to find reused keys across hosts via Shodan.
+- [Sending reports](/pentesting-manual/reporting/sending-reports.md): Coming soon.
+- [Service description of penetration tests](/service-description.md): Service description (terms) for offensive security services.
+- [Shadow credentials](/pentesting-manual/active-directory/lateral-movement/shadow-credentials.md): Abusing msDS-KeyCredentialLink (key trust) to request TGTs for target objects.
+- [Small brute force password lists](/pentesting-manual/web-applications/wordlists/small-bruteforce-lists.md): Compact default credential lists for quick checks across common services.
+- [SMB relaying](/pentesting-manual/active-directory/lateral-movement/smb-relaying.md): Methodology and tooling for NTLM relaying attacks over SMB in AD environments.
+- [Social security numbers generator](/pentesting-manual/socialsecuritynumbersgenerator.md): Client-side generator for valid-format Austrian social security numbers.
+- [Solutions in Power Platform](/pentesting-manual/power-platform/solutions-in-power-platform.md): How solutions bundle apps, flows, tables, and security components for deployment and governance across environments.
+- [SQLi and XSS payloads in filenames](/pentesting-manual/web-applications/file-upload/sqli-xss-in-filename.md): Basic payload examples when filenames are concatenated into SQL/HTML contexts.
+- [This could be important for procurement](/for-procurement.md): Procurement notes - billable expenses, time-based billing, cancellation terms, and where to find formal terms.
+- [Tool cheat sheet](/pentesting-manual/active-directory/tool-cheat-sheet.md): Quick-reference commands for common Active Directory tooling.
+- [Tools](/pentesting-manual/entraid-azure/tools.md): Tooling references for Entra ID and Azure enumeration and post-exploitation workflows.
+- [Toolset for Security Penetration Tests](/pentesting-manual/pentesting-toolset.md): Recommended tools and plugins we use for pentesting across web, AD/Windows, and reporting workflows.
+- [Universal WAF bypass (request padding)](/pentesting-manual/web-applications/universal-waf-bypass.md): Many WAFs inspect only the first N KB of a request body; prepend junk to push payload past inspection limits.
+- [User agent wordlists](/pentesting-manual/web-applications/wordlists/user-agents.md): Links and exported UA lists for fuzzing / WAF behavior checks.
+- [UUID v1 sandwich attack](/pentesting-manual/web-applications/auth/uuidv1-sandwich-attack.md): If password reset links use UUIDv1, try a sandwich attack to guess adjacent UUIDs.
+- [Vulnerability Disclosure](/vulnerability-disclosure.md): How to report vulnerabilities to Syslifters and our vulnerability disclosure policy (including scope and safe harbour).
+- [WebSocket hijacking (origin/SOP note)](/pentesting-manual/web-applications/websocket-hijacking.md): WebSockets bypass some expectations of SOP; validate Origin and authenticate the channel.
+- [What we provide](/what-we-provide.md): Overview of Syslifters’ offensive security services, focus areas, and what services we intentionally do not offer.
+- [Working together in projects](/pentesting-manual/working-together.md): How we collaborate during pentests depending on the timebox.
+- [WSUS](/pentesting-manual/active-directory/privilege-escalation/wsus.md): WSUS-related privilege escalation tooling starting points.
+- [XMP metadata injection in PNG uploads](/pentesting-manual/web-applications/file-upload/xmp-metadata-injection-png.md): Embed XML/HTML payloads in PNG XMP metadata to exploit downstream processing or unsafe rendering.
+- [XSS via SVG file upload](/pentesting-manual/web-applications/file-upload/svg-xss.md): SVG can embed scripts that execute when rendered; validate content and serve safely.
+- [XXE payloads](/pentesting-manual/web-applications/xxe-payloads.md): Payloads and techniques for in-band and blind XXE testing and exfiltration.
+- [YubiKey setup](/organization/human-resources/yubikey-setup.md): Setup guide for using a YubiKey for PIV/SSH (Windows) and basic GPG/SSH agent configuration.
