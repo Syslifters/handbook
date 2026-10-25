@@ -1,0 +1,1 @@
+const s="/assets/Trust_IT_logo.svg",o="/assets/Trust_IT_logo_dark.svg",_="/assets/wu_wien_logo.svg",t="/assets/wu_wien_logo_dark.svg",a="/assets/ikarus_logo.svg",g="/assets/RKNOE_Logo.jpg",r="/assets/vbv_gruppe_logo.svg";export{s as _,o as a,_ as b,t as c,a as d,g as e,r as f};

